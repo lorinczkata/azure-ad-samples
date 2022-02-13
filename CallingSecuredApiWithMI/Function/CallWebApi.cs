@@ -57,7 +57,6 @@ namespace Test.Function
                 string webPortalResource = Environment.GetEnvironmentVariable("WEB_API_AD_APP_ID_URI");
                 var azServiceTokenProvider = new AzureServiceTokenProvider();
                 var token = await azServiceTokenProvider.GetAccessTokenAsync(webPortalResource);
-                log.LogInformation($"token: {token}");
                 return token;
             }
             catch (Exception ex)
