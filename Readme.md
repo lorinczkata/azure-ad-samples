@@ -1,4 +1,4 @@
-# What is this?
+# Summary
 This repository will conatin multiple different Azure AD authentication samples for working with different scenarios.
 
 # Scenarios
