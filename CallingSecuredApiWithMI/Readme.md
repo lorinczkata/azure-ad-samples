@@ -4,7 +4,7 @@ We want to call a Web API running on Azure App service from an Azure Function ap
 The App service is secured by Azure Active Directory, so in order to call it's endpoints, we need to send http request with Authorization headers.  
 In this sample we will use the Azure Function App's managed identity to request access token from the configured App registration of the Web API.
 
-I hope the picture explains this better:
+Study the following picture for further explanation:
 
 
 ![picture 1](../img/f7a24a9b3de3091c0fbe25ccd4a792fa8ebeef413f9751331f693c4baa1bcfe0.png)  
@@ -22,7 +22,7 @@ Basic Function app with an http triggered function named `CallWebApi`. This will
 ## WebApi
 Basically the `minimal web api` sample from the dotnet team with some modifications. Provides swagger ui just to play with it, and `GET/POST wheaterforecast` endpoint.
 
-## How to run this?
+## How to run this
 The terraform solution can be deployed by just executing the following commands in the `IaC/tf` path.
 ```sh
     az login # login to your tenant
